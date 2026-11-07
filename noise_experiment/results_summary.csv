@@ -1,0 +1,9 @@
+noise,filter,n_tiles,psnr_mean,ssim_mean
+gaussian_noise,none,6,24.663,0.6756
+gaussian_noise,median,6,26.347,0.7493
+gaussian_noise,gaussian,6,28.802,0.854
+gaussian_noise,bilateral,6,30.221,0.8726
+saltpepper_noise,none,6,22.112,0.7264
+saltpepper_noise,median,6,27.365,0.8057
+saltpepper_noise,gaussian,6,27.914,0.8283
+saltpepper_noise,bilateral,6,21.895,0.6604
