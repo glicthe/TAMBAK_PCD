@@ -5,7 +5,7 @@ Usage (from the Preprocessing folder):
 Walks every source folder recursively and keeps only files named like
 galis_03052020_03.png or pademawu_22082022_01.png (location_DDMMYYYY_NN.png).
 Full scene images such as "3 mei 2020.png" do not match and are skipped.
-Output is flat: <dst>/<flow>/<same filename>. Tile names are unique, so nothing collides.
+Output: <dst>/<flow>/<flow>_<original filename>, e.g. out/A/A_galis_03052020_03.png.
 """
 import argparse
 import re
@@ -53,7 +53,7 @@ def main():
         if img.shape[:2] != (512, 512):
             print(f"warning: {f.name} is {img.shape[1]}x{img.shape[0]}, expected 512x512")
         for key in args.flows:
-            cv2.imwrite(str(dst / key / f.name), FLOWS[key](img))
+            cv2.imwrite(str(dst / key / f"{key}_{f.name}"), FLOWS[key](img))
 
     print(f"{len(files)} tiles x {len(args.flows)} flows done")
 
