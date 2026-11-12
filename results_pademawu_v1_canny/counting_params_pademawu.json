@@ -1,0 +1,9 @@
+{
+  "open_k": 3,
+  "max_area": 100000,
+  "channel": "gray",
+  "canny_low": 30,
+  "canny_high": 100,
+  "close_k": 7,
+  "min_area": 200
+}

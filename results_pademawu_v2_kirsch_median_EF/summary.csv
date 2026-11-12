@@ -1,0 +1,11 @@
+group_type,group,flow,n,mae,mape
+all,all,E,8,58.875,50.51
+location,pademawu,E,8,58.875,50.51
+date,03052020,E,3,30.667,28.9
+date,08052023,E,2,94.5,73.98
+date,22082022,E,3,63.333,56.47
+all,all,F,8,56.0,49.39
+location,pademawu,F,8,56.0,49.39
+date,03052020,F,3,60.667,58.5
+date,08052023,F,2,75.0,58.3
+date,22082022,F,3,38.667,34.34

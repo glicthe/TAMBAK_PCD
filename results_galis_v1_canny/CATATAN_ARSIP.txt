@@ -1,0 +1,24 @@
+ARSIP VERSI 1 - GALIS CANNY
+============================
+
+Metode     : Canny edge detection
+Parameter  : canny_low 80, canny_high 100, close_k 3, min_area 50, open_k 3, max_area 100000, channel gray
+Filter     : median (folder out/)
+Tile uji   : 9 tile Galis
+
+Hasil (9 tile uji):
+  Alur A - MAE 155.2, MAPE 55.8%
+  Alur B - MAE 229.3, MAPE 70.9%
+  Alur C - MAE 137.7, MAPE 52.2%
+  Alur D - MAE 191.6, MAPE 64.7%
+
+Masalah utama:
+- Tile 3 Mei 2020 diprediksi 0 atau hampir 0 pada alur A dan B
+  (kebenaran 188-295). Canny gagal pada citra berkabut 2020.
+- Galat sangat besar dan tidak konsisten antar tanggal.
+
+Alasan penggantian ke Kirsch (versi 2):
+- Sama dengan Pademawu: Canny tidak robust terhadap variasi kontras.
+- Kirsch dengan threshold adaptif lebih stabil.
+
+Tanggal arsip: 12 November 2026

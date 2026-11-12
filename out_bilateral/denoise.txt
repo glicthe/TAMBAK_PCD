@@ -1,2 +1,2 @@
 denoise=bilateral
-flows=ABCD
+flows=EF

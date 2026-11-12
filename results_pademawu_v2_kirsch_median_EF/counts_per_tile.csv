@@ -1,0 +1,17 @@
+tile,flow,pred,truth,abs_err,pct_err
+pademawu_03052020_02.png,E,63,111,48,43.24
+pademawu_03052020_03.png,E,79,110,31,28.18
+pademawu_03052020_04.png,E,72,85,13,15.29
+pademawu_08052023_01.png,E,26,135,109,80.74
+pademawu_08052023_03.png,E,39,119,80,67.23
+pademawu_22082022_01.png,E,45,123,78,63.41
+pademawu_22082022_02.png,E,49,119,70,58.82
+pademawu_22082022_04.png,E,47,89,42,47.19
+pademawu_03052020_02.png,F,31,111,80,72.07
+pademawu_03052020_03.png,F,48,110,62,56.36
+pademawu_03052020_04.png,F,45,85,40,47.06
+pademawu_08052023_01.png,F,40,135,95,70.37
+pademawu_08052023_03.png,F,64,119,55,46.22
+pademawu_22082022_01.png,F,67,123,56,45.53
+pademawu_22082022_02.png,F,84,119,35,29.41
+pademawu_22082022_04.png,F,64,89,25,28.09

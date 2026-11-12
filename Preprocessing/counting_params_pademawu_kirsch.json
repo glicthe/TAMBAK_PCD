@@ -1,0 +1,10 @@
+{
+  "method": "kirsch",
+  "open_k": 3,
+  "max_area": 100000,
+  "channel": "gray",
+  "thr_scale": 1.2,
+  "speck_area": 0,
+  "dilate_k": 3,
+  "min_area": 20
+}

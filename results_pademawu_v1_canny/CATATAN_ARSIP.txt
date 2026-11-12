@@ -1,0 +1,28 @@
+ARSIP VERSI 1 - PADEMAWU CANNY
+===============================
+
+Metode     : Canny edge detection
+Parameter  : canny_low 30, canny_high 100, close_k 7, min_area 200, open_k 3, max_area 100000, channel gray
+Filter     : median (folder out/)
+Tile uji   : 8 tile Pademawu
+
+Hasil (8 tile uji):
+  Alur A - MAE 46.1, MAPE 44.2%
+  Alur B - MAE 49.8, MAPE 48.3%
+  Alur C - MAE 31.5, MAPE 29.8%
+  Alur D - MAE 29.0, MAPE 25.4%
+
+Masalah utama:
+- Tile 3 Mei 2020 diprediksi 0 pada alur A dan B (kebenaran 85-111).
+  Canny 30/100 hampir tanpa tepi pada tile 2020 berkontras rendah,
+  sehingga hasil inversinya satu wilayah besar yang melebihi max_area.
+- Canny tidak robust terhadap variasi kontras antar tanggal.
+
+Alasan penggantian ke Kirsch (versi 2):
+- Canny gagal total pada citra berkontras rendah (2020).
+- Kirsch menghasilkan tepi yang lebih konsisten karena menggunakan
+  konvolusi 8 arah dan threshold adaptif (thr_scale * mean magnitude).
+- Setelah melihat kegagalan Canny, diputuskan beralih ke Kirsch
+  dengan parameter yang disetel ulang pada tile tuning alur A.
+
+Tanggal arsip: 12 November 2026
